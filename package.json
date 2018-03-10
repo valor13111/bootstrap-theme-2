@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap-theme-2",
+  "version": "1.0.0",
+  "description": "A bootstrap theme using parallax scrolling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "gulp",
+    "parallax"
+  ],
+  "author": "Tyler Reed",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^3.1.2",
+    "gulp-sass": "^3.1.0"
+  }
+}
