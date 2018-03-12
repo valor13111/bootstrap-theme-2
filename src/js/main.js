@@ -1,36 +1,11 @@
-// function parallax() {
-//   var parallax_landing = document.getElementById('parallax-1');
-//   parallax_landing.style.top = -(window.pageYOffset / 4) + 'px';
-// }
-//
-// window.addEventListener("scroll", navbarScroll, false);
-
-// document.addEventListener("DOMContentLoaded", function(event) {
-//
-//   let prevScrollpos = window.pageYOffset;
-//
-//   window.onscroll = function() {
-//     event.console.log("HI");
-//     var currentScrollPos = window.pageYOffset;
-//     console.log("HIHIHI");
-//
-//     if (prevScrollpos > currentScrollPos) {
-//       document.getElementById("elegant").style.top = "0";
-//     } else {
-//       document.getElementById("elegant").style.top = "-75px";
-//     }
-//
-//     prevScrollpos = currentScrollPos;
-//   }
+// document.addEventListener('DOMContentLoaded', function() {
 //
 // });
-
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+//
 // let prevScrollpos = window.pageYOffset;
 //
 // window.onscroll = function() {
 //   var currentScrollPos = window.pageYOffset;
-//   console.log("HIHIHI");
 //
 //   if (prevScrollpos > currentScrollPos) {
 //     document.getElementById("elegant").style.top = "0";
@@ -41,31 +16,29 @@
 //   prevScrollpos = currentScrollPos;
 // }
 
-function ready(callback){
-    // in case the document is already rendered
-    if (document.readyState!='loading') callback();
-    // modern browsers
-    else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
-    // IE <= 8
-    else document.attachEvent('onreadystatechange', function(){
-        if (document.readyState=='complete') callback();
-    });
-}
+$(document).ready(function(){
 
-ready(function(){
-  let prevScrollpos = window.pageYOffset;
+  let prevScrollpos = $(window).scrollTop();
 
-  window.onscroll = function() {
-    event.console.log("HI");
-    var currentScrollPos = window.pageYOffset;
-    console.log("HIHIHI");
+  $(window).scroll(function() {
+    var currentScrollPos = $(window).scrollTop();
 
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("elegant").style.top = "0";
+    console.log($(window).scrollTop());
+
+    if(prevScrollpos > currentScrollPos) {
+      $('#elegant').css('top', '0px');
     } else {
-      document.getElementById("elegant").style.top = "-75px";
+      $('#elegant').css('top', '-150px');
     }
+  });
 
-    prevScrollpos = currentScrollPos;
-  }
+  // $('#card-group1').css('display', 'none');
+  // $('#card-group1').delay(500).fadeIn(1000);
+
+  // $('#section-group').css('display', 'none');
+  // $('#section-background').delay(500).fadeIn(1000);
+  // $('#card-one').delay(500).fadeIn(1000);
+  // $('#card-two').delay(1000).fadeIn(1500);
+  // $('#card-three').delay(1000).fadeIn(2000);
+  // $('#card-four').delay(2000).fadeIn(2500);
 });
