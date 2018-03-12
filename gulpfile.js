@@ -1,13 +1,6 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
-var ejs         = require('gulp-ejs');
-
-gulp.task('ejs', function() {
-  return gulp.src("src/templates/*.ejs")
-      .pipe(ejs({}, {}, {ext:'.html'}))
-      .pipe(gulp.dest("../bootstrap-theme-2"));
-});
 
 gulp.task('sass', function() {
   return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
@@ -29,7 +22,6 @@ gulp.task('server', ['sass'], function() {
 
   gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
   gulp.watch("*.html").on('change', browserSync.reload);
-  gulp.watch(['src/templates/partials/*.ejs', 'src/templates/*.ejs']).on('change', browserSync.reload);
 })
 
-gulp.task('default', ['js', 'server', 'ejs']);
+gulp.task('default', ['js', 'server']);
