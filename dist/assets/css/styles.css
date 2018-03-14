@@ -57,13 +57,13 @@ a:hover {
   background-attachment: fixed; }
 
 .parallax-img-1 {
-  background-image: url("/src/assets/wedding1.jpeg"); }
+  background-image: url("../../assets/img/wedding1.jpeg"); }
 
 .parallax-img-2 {
-  background-image: url("/src/assets/wedding2.jpeg"); }
+  background-image: url("../../assets/img/wedding2.jpeg"); }
 
 .parallax-img-3 {
-  background-image: url("/src/assets/wedding3.jpeg"); }
+  background-image: url("../../assets/img/wedding3.jpeg"); }
 
 .parallax-lg {
   width: 100%;
@@ -256,3 +256,15 @@ a:hover {
 @media (max-width: 648px) {
   .parallax-img-1 {
     height: 300px; } }
+
+/*********** Wedding Page ***********/
+.row li a {
+  color: #E9DCCD; }
+
+@media (min-width: 300px) {
+  dl, ol, ul {
+    font-size: 14px; } }
+
+@media (min-width: 576px) {
+  dl, ol, ul {
+    font-size: 18px; } }
