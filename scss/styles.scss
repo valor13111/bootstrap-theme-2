@@ -348,21 +348,3 @@ a {
     height: 300px;
   }
 }
-
-/*********** Wedding Page ***********/
-
-.row li a {
-  color:#E9DCCD;
-}
-
-@media (min-width: 300px) {
-  dl, ol, ul {
-    font-size:14px;
-  }
-}
-
-@media (min-width: 576px) {
-  dl, ol, ul {
-    font-size:18px;
-  }
-}

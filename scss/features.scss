@@ -3,13 +3,14 @@ $petal: #E3BAB3;
 $burgundy: #613A43;
 $fresh: #849974;
 $charcoal: #36384C;
+$egg-white: #EEF4F7;
 
 .features-boxed {
   color:#313437;
-  background-color: $charcoal;
+  background-color: $egg-white;
 
   a {
-    color: $charcoal;
+    color: $cream;
   }
 
   p {
@@ -32,16 +33,6 @@ $charcoal: #36384C;
   }
 }
 
-.features-boxed .intro {
-  font-size:16px;
-  max-width:500px;
-  margin:0 auto;
-}
-
-.features-boxed .intro p {
-  margin-bottom:0;
-}
-
 .features-boxed .features {
   padding:50px 0;
 }
@@ -52,14 +43,14 @@ $charcoal: #36384C;
 
 .features-boxed .item .box {
   text-align:center;
-  padding:30px;
-  background-color: $cream;
+  padding:25px;
+  background-color: $burgundy;
   margin-bottom:30px;
 }
 
 .features-boxed .item .icon {
   font-size:60px;
-  color:$burgundy;
+  color:$fresh;
   margin-top:20px;
   margin-bottom:35px;
 }
@@ -69,11 +60,13 @@ $charcoal: #36384C;
   font-size:20px;
   margin-bottom:8px;
   margin-top:0;
-  color:inherit;
+  color: $cream;
 }
 
 .features-boxed .item .description {
   font-size:15px;
   margin-top:15px;
   margin-bottom:20px;
+  color: #FFF;
+  font-style: italic;
 }
