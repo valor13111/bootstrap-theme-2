@@ -23,6 +23,17 @@ $egg-white: #EEF4F7;
   color: $charcoal;
 }
 
+<<<<<<< HEAD
+=======
+@media (max-width:767px) {
+  .team-clean h1 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+>>>>>>> 532f71bd0c613bdeab0b43d50475c4b71a606a59
 .team-clean .people {
   padding-bottom:40px;
 }
@@ -51,13 +62,17 @@ $egg-white: #EEF4F7;
   font-size:15px;
   margin-top:15px;
   margin-bottom:20px;
+<<<<<<< HEAD
   padding: 20px;
   text-align: left;
+=======
+>>>>>>> 532f71bd0c613bdeab0b43d50475c4b71a606a59
 }
 
 .team-clean .item img {
   max-width: 350px;
 }
+<<<<<<< HEAD
 
 @media (max-width: 1280px) {
   .team-clean {
@@ -99,3 +114,5 @@ $egg-white: #EEF4F7;
     }
   }
 }
+=======
+>>>>>>> 532f71bd0c613bdeab0b43d50475c4b71a606a59
