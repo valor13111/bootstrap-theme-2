@@ -63,3 +63,7 @@
     max-width: 300px; }
   .jumbotron h1 {
     font-size: 60px; } }
+
+@media (max-width: 526px) {
+  .team-clean .item .description {
+    display: none; } }
