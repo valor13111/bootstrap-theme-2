@@ -5,26 +5,19 @@ $fresh: #849974;
 $charcoal: #36384C;
 
 .header-dark {
-  background:url(../../assets/img/mountain_bg.jpg) #444;
-  background-size:cover;
-  padding-bottom:80px;
+  background: url(../../assets/img/mountain_bg.jpg) #444;
+  background-size: cover;
+  padding-bottom: 80px;
 
   .hero {
-    margin-top:60px;
+    margin-top: 60px;
 
     h1 {
-      color:#fff;
-<<<<<<< HEAD
+      color: #fff;
       font-size:80px;
       margin-top:50px;
       margin-bottom:60px;
       font-family: 'Great Vibes', cursive;
-=======
-      font-family:'Bitter', serif;
-      font-size:80px;
-      margin-top:50px;
-      margin-bottom:60px;
->>>>>>> 532f71bd0c613bdeab0b43d50475c4b71a606a59
     }
 
     .embed-responsive iframe {
