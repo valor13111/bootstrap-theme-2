@@ -3,3 +3,4 @@ node_modules/
 src/templates/
 src/scss/
 package-lock.json
+dist/
