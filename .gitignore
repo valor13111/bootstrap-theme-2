@@ -1,7 +1,3 @@
 gulpfile.js
 node_modules/
 package-lock.json
-dist/
-_dev_images/
-_dev_stylesheets/css
-_dev_html/
