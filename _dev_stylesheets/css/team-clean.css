@@ -64,6 +64,6 @@
   .jumbotron h1 {
     font-size: 60px; } }
 
-@media (max-width: 526px) {
+@media (max-width: 570px) {
   .team-clean .item .description {
     display: none; } }

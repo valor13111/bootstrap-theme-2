@@ -70,3 +70,11 @@ $egg-white: #EEF4F7;
   color: #FFF;
   font-style: italic;
 }
+
+@media (max-width: 570px) {
+  .features-boxed {
+    .item .description {
+      display: none;
+    }
+  }
+}

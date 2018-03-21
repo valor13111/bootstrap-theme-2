@@ -100,10 +100,12 @@ $egg-white: #EEF4F7;
   }
 }
 
-@media (max-width: 526px) {
+@media (max-width: 570px) {
   .team-clean {
-    .item .description {
-      display: none;
+    .item {
+      .description {
+        display: none;
+      }
     }
   }
 }
