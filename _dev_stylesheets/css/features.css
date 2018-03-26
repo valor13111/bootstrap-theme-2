@@ -48,3 +48,7 @@
   margin-bottom: 20px;
   color: #FFF;
   font-style: italic; }
+
+@media (max-width: 570px) {
+  .features-boxed .item .description {
+    display: none; } }

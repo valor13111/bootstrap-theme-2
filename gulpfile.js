@@ -21,7 +21,7 @@ gulp.task('js', () => {
 
 // TEMPLATING
 gulp.task('ejs', () => {
-  return gulp.src('templates/*.ejs')
+  return gulp.src('_dev_templates/*.ejs')
     .pipe(ejs({}, {}, { ext: '.html' }))
     .pipe(gulp.dest('_dev_html'));
 });
@@ -42,7 +42,7 @@ gulp.task('minify-css', () => {
     .pipe(gulp.dest('dist/assets/css'));
 });
 
-gulp.task('minify-html', function() {
+gulp.task('minify-html', () => {
   return gulp.src('_dev_html/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'));
@@ -51,11 +51,11 @@ gulp.task('minify-html', function() {
 // BROWSERSYNC
 gulp.task('server', ['sass'], () => {
   browserSync.init({
-    server: "./dist"
+    server: "dist"
   });
 
-  gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'dist/assets/scss/*.scss', 'scss/*.scss'], ['sass']);
-  gulp.watch("./dist/*.html").on('change', browserSync.reload);
+  gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'dist/assets/scss/*.scss', '_dev_stylesheets/scss/*.scss'], ['sass']);
+  gulp.watch("dist/*.html").on('change', browserSync.reload);
 })
 
 // DEFAULT TASK GULP EXECUTES
